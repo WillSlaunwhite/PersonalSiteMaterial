@@ -17,7 +17,6 @@ import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent],
   imports: [
@@ -32,8 +31,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatInputModule,
     MatListModule,
     HttpClientModule,
-    FontAwesomeModule,
     MatCardModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
