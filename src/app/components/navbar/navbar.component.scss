@@ -7,6 +7,9 @@ a {
 input {
   background: transparent;
 }
+fa-icon {
+  color: rgba(176, 176, 176, 0.678);
+}
 
 
 .brand {
@@ -42,13 +45,20 @@ input {
 
 .mat-button:hover {
   transform: scale(1.05);
-  transition: ease 2s linear 1s ;
+  transition: ease .5s;
 }
 
 .resume {
+  color: rgba(176, 176, 176, 0.678) !important;
   padding: .25em 1em;
+  margin-top: 1px;
   border-radius: 8px;
   float: right;
+}
+
+.resume:hover {
+  transition: ease .5s;
+  color: white !important;
 }
 
 .active {
@@ -61,5 +71,6 @@ input {
 
 .resume-container {
   width: 75%;
+  margin-left: 15px;
 }
 

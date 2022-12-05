@@ -1,4 +1,19 @@
+* {
+  background-color: rgb(7, 21, 36);
+}
+
 .container {
   height: 100vh;
-  background-color: rgb(34, 51, 68);
+  background-color: rgba(58, 149, 118, 0.527);
+  justify-content: space-between;
 }
+
+mat-card {
+  border-radius: 15px;
+  width: 350px;
+}
+
+img {
+  height: 250px;
+}
+
