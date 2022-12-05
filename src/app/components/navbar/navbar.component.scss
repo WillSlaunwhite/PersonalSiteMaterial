@@ -1,0 +1,65 @@
+* {
+  font-family: Poppin, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+input {
+  background: transparent;
+}
+
+
+.brand {
+  font-weight: 500;
+  color: white;
+  font-family: 'Andale Mono';
+  padding-left: 10px;
+}
+
+.navbar {
+  justify-content: space-between;
+  height: 8%;
+}
+
+.icon {
+  padding-top: .5em;
+}
+
+.nav-link {
+  padding-right: 1.5em;
+  border-radius: 8px;
+}
+
+.mat-button {
+  font-size: 17px;
+  font-weight: 300;
+  align-items: center;
+  color: gray;
+  text-decoration: none;
+  display: inline-block;
+  padding-inline: 8px;
+}
+
+.mat-button:hover {
+  transform: scale(1.05);
+  transition: ease 2s linear 1s ;
+}
+
+.resume {
+  padding: .25em 1em;
+  border-radius: 8px;
+  float: right;
+}
+
+.active {
+  color: white;
+}
+
+.links {
+  display: block;
+}
+
+.resume-container {
+  width: 75%;
+}
+
