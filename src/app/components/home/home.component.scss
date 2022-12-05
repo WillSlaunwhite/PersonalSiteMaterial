@@ -1,19 +1,48 @@
 * {
   background-color: rgb(7, 21, 36);
+  text-decoration: none;
 }
 
 .container {
   height: 100vh;
-  background-color: rgba(58, 149, 118, 0.527);
   justify-content: space-between;
 }
 
 mat-card {
   border-radius: 15px;
-  width: 350px;
+  width: 85%;
+  max-width: 350px;
+}
+
+mat-card:hover {
+  transform: scale(1.025);
+  transition: ease-in .25s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
 }
 
 img {
   height: 250px;
 }
 
+.about-me {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 1em;
+}
+
+.about-me-header {
+  font-family: 'Andale Mono';
+  font-weight: 500;
+  color: white;
+  margin-top: 0px;
+  text-align: center;
+  padding-top: 1.5em;
+  padding-bottom: .75em;
+}
+
+.about-me-body {
+  letter-spacing: 2.5px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  padding-inline: 25%;
+}

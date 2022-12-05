@@ -18,4 +18,8 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openPdf(){
+    window.open("assets/Resume.pdf");
+  }
+
 }

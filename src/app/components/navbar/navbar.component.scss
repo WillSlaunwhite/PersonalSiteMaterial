@@ -10,6 +10,11 @@ input {
 fa-icon {
   color: rgba(176, 176, 176, 0.678);
 }
+fa-icon:hover {
+  transition: ease-in .3s;
+  color: white;
+}
+
 
 
 .brand {
@@ -26,10 +31,10 @@ fa-icon {
 
 .icon {
   padding-top: .5em;
+  padding-inline: 1.5em;
 }
 
 .nav-link {
-  padding-right: 1.5em;
   border-radius: 8px;
 }
 
@@ -40,7 +45,6 @@ fa-icon {
   color: gray;
   text-decoration: none;
   display: inline-block;
-  padding-inline: 8px;
 }
 
 .mat-button:hover {
@@ -50,10 +54,10 @@ fa-icon {
 
 .resume {
   color: rgba(176, 176, 176, 0.678) !important;
-  padding: .25em 1em;
   margin-top: 1px;
   border-radius: 8px;
   float: right;
+  padding: .25em .75em;
 }
 
 .resume:hover {
@@ -70,7 +74,7 @@ fa-icon {
 }
 
 .resume-container {
-  width: 75%;
-  margin-left: 15px;
+  width: 80%;
+  margin-right: 1.5em;
 }
 
