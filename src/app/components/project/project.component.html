@@ -1,0 +1,9 @@
+<div class="container">
+  <div *ngFor="let project of projects">
+    <div class="project-container" *ngIf="project.name === projectName">
+      <p class="project-text">Project Name: {{project.name}}</p>
+      <img class="project-image" src="{{project.imageUrl}}">
+      <img class="second-project-image" src="{{project.imageUrl}}">
+    </div>
+  </div>
+</div>

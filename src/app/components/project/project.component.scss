@@ -1,0 +1,52 @@
+* {
+  background-color: rgb(7, 21, 36);
+  text-decoration: none;
+}
+p {
+  color: white;
+}
+img {
+  border-radius: 15px;
+}
+
+
+
+
+
+
+
+.project-image {
+  width: 50%;
+  margin: auto 5%;
+}
+
+.second-project-image {
+  width: 50%;
+  margin: auto 5%;
+}
+
+
+
+
+
+
+
+
+
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-text {
+  align-self: flex-end;
+  background: transparent;
+  font-weight: 300;
+  margin: 1em 10%;
+}
+
+.container {
+  height: 100vh;
+}
+
