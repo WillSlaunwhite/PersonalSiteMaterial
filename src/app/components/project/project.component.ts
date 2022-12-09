@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 
 export class Project {
   name: string;
@@ -21,6 +21,12 @@ export class ProjectComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
   projectName: string | null = null;
+  images = {
+    VioletMarketplace: ['https://i.imgur.com/166UgKm.jpg', 'https://i.imgur.com/hJZOapP.jpg'],
+    OutTheDoor: [],
+    TheBet: []
+  }
+
   projects: Project[] = [
     new Project('VioletMarketplace', 'https://i.imgur.com/166UgKm.jpg', 'hello?'),
     new Project('Out The Door', 'https://i.imgur.com/JpypljN.jpg', 'hello?'),

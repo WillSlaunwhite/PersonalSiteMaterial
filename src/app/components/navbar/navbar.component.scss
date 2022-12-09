@@ -26,6 +26,7 @@ fa-icon:hover {
 .navbar {
   justify-content: space-between;
   height: 8%;
+  min-height: 100px !important;
 }
 
 .icon {
@@ -77,3 +78,11 @@ fa-icon:hover {
   margin-right: 1.5em;
 }
 
+@media (max-width: 450px){
+  .icon {
+    padding-inline: .75em;
+  }
+  .brand {
+    padding-inline: 0 !important;
+  }
+}
