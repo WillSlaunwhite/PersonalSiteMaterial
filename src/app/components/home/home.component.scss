@@ -23,6 +23,7 @@
   border-radius: 15px;
   margin-inline: 5em;
   transition: ease-in-out .5s;
+  min-width: 25%;
 }
 
 p {
@@ -73,7 +74,8 @@ img {
   padding-inline: 20%;
 }
 
-@media(max-width: 920px) {
+
+@media(max-width: 1080px) {
   .about-me-header{
     font-size: x-large;
     padding: .5em 0;

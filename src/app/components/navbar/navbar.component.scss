@@ -20,11 +20,11 @@ fa-icon:hover {
   font-weight: 500;
   color: white;
   font-family: 'Andale Mono';
-  padding-left: 10px;
 }
 
 .navbar {
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
   height: 8%;
   min-height: 100px !important;
 }
@@ -45,11 +45,12 @@ fa-icon:hover {
   color: gray;
   text-decoration: none;
   display: inline-block;
+  transition: ease .3s;
 }
 
 .mat-button:hover {
   transform: scale(1.05);
-  transition: ease .5s;
+  transition: ease .3s;
 }
 
 .resume {
@@ -58,10 +59,11 @@ fa-icon:hover {
   border-radius: 8px;
   float: right;
   padding: .25em .75em;
+  transition: ease .3s;
 }
 
 .resume:hover {
-  transition: ease .5s;
+  transition: ease .3s;
   color: white !important;
 }
 
@@ -80,7 +82,7 @@ fa-icon:hover {
 
 @media (max-width: 450px){
   .icon {
-    padding-inline: .75em;
+    padding-inline: .5em;
   }
   .brand {
     padding-inline: 0 !important;
