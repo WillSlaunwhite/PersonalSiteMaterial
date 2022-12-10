@@ -24,7 +24,7 @@ export class ProjectComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
   projectName: string | null = null;
   images = {
-    VioletMarketplace: ['https://i.imgur.com/166UgKm.jpg', 'https://i.imgur.com/1NbgeW6.jpg'],
+    VioletMarketplace: ['https://i.imgur.com/166UgKm.jpg', 'https://i.imgur.com/1NbgeW6.jpg', 'https://i.imgur.com/e98haC0.png', 'https://i.imgur.com/NiqRRH0.png'],
     OutTheDoor: [],
     TheBet: []
   }

@@ -11,12 +11,29 @@ p {
 }
 img {
   border-radius: 15px;
+  width: 100% !important;
+  min-width: 450px ;
+  max-width: 450px;
+  height: 22vh;
 }
 
 .project-container,
 .project-image-container {
   display: flex;
   flex-direction: column;
+}
+
+.project-link:nth-of-type(3) {
+  align-self: center;
+  position: absolute;
+  margin-left: -7.5%;
+}
+
+.project-link:nth-of-type(4) {
+  position: fixed;
+  top: 57%;
+  align-self: center;
+  margin-left: -7.5%;
 }
 
 .project-text {
@@ -32,17 +49,12 @@ img {
   height: 100vh;
 }
 
-.img-2 {
-}
 
-.img-1, .img-2 {
-  width: 100%;
-  min-width: 300px;
-}
 
 .project-link {
   margin: 2em 5% .5em;
   width: 25%;
+  display: flex;
 }
 
 .image-container {
@@ -58,7 +70,7 @@ img {
   /* e.g. */
   position: relative;
   left: 4em;
-  bottom: 7em;
+  bottom: 5.5em;
   font-size: small !important;
   line-height: 1.5;
   font-weight: 400;
@@ -67,25 +79,15 @@ img {
   background-color: #3f51b5;
 }
 
+::ng-deep .mat-tooltip:nth-of-type(2) {
+  bottom: 5em !important;
+  background-color: #35335c;
 
-
-
-
-
-.project-image-container:hover .img-1:hover {
-  transform: scale(1.25);
-  transition: ease-in-out .5s;
-  -o-transition: ease-in-out .5s;
-  /* opera */
-  -ms-transition: ease-in-out .5s;
-  /* IE 10 */
-  -moz-transition: ease-in-out .5s;
-  /* Firefox */
-  -webkit-transition: ease-in-out .5s;
-  /*safari and chrome */
 }
 
-.project-image-container:hover .img-2:hover, .image-text:hover {
+
+
+.project-image-container:hover img:hover {
   transform: scale(1.25);
   transition: ease-in-out .5s;
   -o-transition: ease-in-out .5s;
@@ -99,8 +101,7 @@ img {
 
 }
 
-.project-image,
-.second-project-image, .image-text:hover {
+img {
   transition: ease-in-out .5s;
   -o-transition: ease-in-out .5s;
   /* opera */

@@ -16,7 +16,7 @@
           <img class="project-image img-1" src="{{images.VioletMarketplace[0]}}">
           </div>
         </a>
-        <a (mouseenter)="showText=true" (mouseleave)="showText=false" class="project-link" href="https://github.com/WillSlaunwhite/{{projectName}}">
+        <a class="project-link" href="https://github.com/WillSlaunwhite/{{projectName}}">
           <div class="image-container image-tooltip" #tooltip="matTooltip"
             matTooltip="The User's landing page showing their transaction history, favorites and profile details."
             [matTooltipShowDelay]="250"
@@ -25,6 +25,28 @@
           >
 
             <img class="project-image img-2" src="{{images.VioletMarketplace[1]}}">
+          </div>
+        </a>
+        <a class="project-link" href="https://github.com/WillSlaunwhite/{{projectName}}">
+          <div class="image-container image-tooltip" #tooltip="matTooltip"
+            matTooltip="The contributors to the original project."
+            [matTooltipShowDelay]="250"
+            [matTooltipHideDelay]="150"
+            matTooltipPosition="right"
+          >
+
+            <img class="project-image img-3" src="{{images.VioletMarketplace[2]}}">
+          </div>
+        </a>
+        <a class="project-link" href="https://github.com/WillSlaunwhite/{{projectName}}">
+          <div class="image-container image-tooltip" #tooltip="matTooltip"
+            matTooltip="The original project was dependant on a large external package for styling, so I'm currently rewritting the project using Angular Material"
+            [matTooltipShowDelay]="250"
+            [matTooltipHideDelay]="150"
+            matTooltipPosition="right"
+          >
+
+            <img class="project-image img-4" src="{{images.VioletMarketplace[3]}}">
           </div>
         </a>
       </div>
