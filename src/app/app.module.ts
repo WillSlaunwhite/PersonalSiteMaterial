@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ProjectComponent } from './components/project/project.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -15,9 +16,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+import {MatTooltipModule} from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { ProjectComponent } from './components/project/project.component';
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent, ProjectComponent],
   imports: [
@@ -33,7 +35,8 @@ import { ProjectComponent } from './components/project/project.component';
     MatListModule,
     HttpClientModule,
     MatCardModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatTooltipModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

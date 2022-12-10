@@ -1,10 +1,23 @@
 <div class="container">
   <div *ngFor="let project of projects">
     <div class="project-container" *ngIf="project.name === projectName">
-      <p class="project-text">Project Name: {{project.name}}</p>
+      <p class="project-text">
+        Project Name: {{project.name}} <br><br>
+        {{project.description}}</p>
       <div class="project-image-container">
-        <img class="project-image img-1" src="{{images.VioletMarketplace[0]}}">
-        <img class="project-image img-2" src="{{images.VioletMarketplace[1]}}">
+        <a class="project-link" href="https://github.com/WillSlaunwhite/{{projectName}}">
+          <img class="project-image img-1" src="{{images.VioletMarketplace[0]}}">
+        </a>
+        <a (mouseenter)="showText=true" (mouseleave)="showText=false" class="project-link" href="https://github.com/WillSlaunwhite/{{projectName}}">
+          <div class="image-container image-tooltip" #tooltip="matTooltip"
+            matTooltip="Hello"
+            [matTooltipShowDelay]="300"
+            matTooltipPosition="right"
+          >
+
+            <img class="project-image img-2" src="{{images.VioletMarketplace[1]}}">
+          </div>
+        </a>
       </div>
     </div>
   </div>

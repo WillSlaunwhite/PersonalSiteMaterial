@@ -5,6 +5,9 @@
 p {
   color: white;
   padding: 1em;
+  justify-self: flex-end;
+  width: 55%;
+  margin-left: 0;
 }
 img {
   border-radius: 15px;
@@ -20,45 +23,72 @@ img {
   align-self: flex-end;
   background: transparent;
   font-weight: 300;
-  margin: 0 10%;
-}
+  word-spacing: .2em;
+  line-height: 1.25em;
+  margin: 0 5%;
 
+}
 .container {
   height: 100vh;
 }
 
 .img-1, .img-2 {
-  width: 25%;
-  margin: 1.5em 5% .5em;
-
+  width: 100%;
+  min-width: 300px;
 }
+
+.project-link {
+  margin: 2em 5% .5em;
+  width: 25%;
+}
+
+.image-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+
+
+::ng-deep .mat-tooltip {
+  /* your own custom styles here */
+  /* e.g. */
+  color: yellow !important;
+  position: absolute;
+  left: 5em;
+  padding: 5em;
+  padding-inline: 10em !important;
+}
+
+
+
 
 
 
 
 .project-image-container:hover .img-1:hover {
   transform: scale(1.25);
-  transition: ease-in-out .75s;
-  -o-transition: ease-in-out .75s;
+  transition: ease-in-out .5s;
+  -o-transition: ease-in-out .5s;
   /* opera */
-  -ms-transition: ease-in-out .75s;
+  -ms-transition: ease-in-out .5s;
   /* IE 10 */
-  -moz-transition: ease-in-out .75s;
+  -moz-transition: ease-in-out .5s;
   /* Firefox */
-  -webkit-transition: ease-in-out .75s;
+  -webkit-transition: ease-in-out .5s;
   /*safari and chrome */
 }
 
 .project-image-container:hover .img-2:hover {
   transform: scale(1.25);
-  transition: ease-in-out .75s;
-  -o-transition: ease-in-out .75s;
+  transition: ease-in-out .5s;
+  -o-transition: ease-in-out .5s;
   /* opera */
-  -ms-transition: ease-in-out .75s;
+  -ms-transition: ease-in-out .5s;
   /* IE 10 */
-  -moz-transition: ease-in-out .75s;
+  -moz-transition: ease-in-out .5s;
   /* Firefox */
-  -webkit-transition: ease-in-out .75s;
+  -webkit-transition: ease-in-out .5s;
   /*safari and chrome */
 
 }
