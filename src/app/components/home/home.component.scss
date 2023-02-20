@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nunito:wght@200;300;400&family=Ubuntu:wght@300&display=swap');
 p {
   text-align: center;
 } a {
@@ -6,8 +7,8 @@ p {
   flex-direction: column;
   align-items: center;
 } img {
-  flex: 1;
-  width: 500px;
+  min-width: 25rem;
+  max-width: 35rem;
   border-radius: 15px;
   transition: ease .5s;
   &:hover {
@@ -16,97 +17,115 @@ p {
   }
 }
 
-
 .container {
   background-image: url("https://bl3301files.storage.live.com/y4m09o86Jonodo56CSbwHcRpggJ7QfEY6YIS4jHgJxnWo214sjRmPqH-khbmo8EmFiKq6vdFn-lJTF2eY00ddjHh6oo_O8Se_3Ag7z3hC5kGO3VZAdlcZOIIrjhiPWRRPmbLkapczl386b94K8E6-jtJcfLDKtQWjQH0xkPtI5JeU9GycETSzxuQVTYr0J3OCaL?width=3648&height=2736&cropmode=none");
   background-size: 100vw 100vh;
-  height: 100vh;
+}
 
+.first-text {
+  padding-top: 3rem;
+}
+
+.project-link {
+  min-width: 25rem;
+  max-width: 35rem;
 }
 
 .card-container {
   display: flex;
-  // height: 50%;
-  justify-content: center;
+  justify-content: space-around;
   margin-top: 5rem;
+  margin-inline: 3.5rem;
 }
 
 .card {
-  flex: 1;
-  flex-shrink: 1;
+  display: flex;
   justify-content: center;
-  border-radius: 15px;
   transition: ease-in-out .5s;
-  min-width: 25%;
+  height: 100%;
 }
 
 .card-text {
-  width: 80%;
-}
-
-.about-me {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 1em;
+  width: 100%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200;
+  letter-spacing: .75px;
 }
 
 .about-me-header {
-  font-family: 'Andale Mono';
-  font-weight: 500;
-  color: white;
-  margin-top: 0px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 2px;
+  font-size: 2rem;
   text-align: center;
-  padding-top: 1.5em;
-  padding-bottom: .75em;
+  font-weight: 400;
+  margin-top: 1rem;
+  padding-bottom: .5rem;
+  color: white;
 }
 
 .about-me-body {
-  letter-spacing: 2.5px;
-  font-size: 22px;
+  font-family: 'Nunito', sans-serif;
+  letter-spacing: 1.5px;
+  font-size: 1.25rem;
   color: white;
+  font-weight: 300;
   text-align: center;
   padding-inline: 20%;
 }
 
 
-@media(max-width: 1080px) {
+@media(max-width: 1250px) {
   .about-me-header{
     font-size: x-large;
-    padding: .5em 0;
   }
   .about-me-body {
-    font-size: small!important;
+    font-size: 1rem;
     padding-inline: 10%;
   }
   img {
-    height: 20vh;
-    width: 70vw;
+    width: 20rem;
   }
   .card-container {
     align-items:center;
     flex-direction: column;
   }
-  .card-text {
-    font-size: smaller !important;
+}
+@media(max-height: 900px) {
+  .container {
+    background-size: 100vw 120vh;
+    height: 120vh;
   }
-  .vm {
-    margin-top: 20%;
+  .about-me-header{
+    font-size: x-large;
+    padding: 0;
   }
-  .otd{
-    display: none;
+  .about-me-body {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding-inline: 10%;
+  }
+  img {
+    width: 20rem;
+  }
+  .card-container {
+    margin: 2rem;
+    align-items:center;
+    flex-direction: column;
   }
 }
 
-@media (max-height: 800px) {
-  .card-container{
-    justify-content: flex-start ;
-  }
-  img {
-    height: 60%;
-  }
-  .about-me-body{
-    font-size: xx-small !important;
-  }
-}
+// @media (max-height: 800px) {
+//   .card-container{
+//     justify-content: flex-start ;
+//   }
+//   img {
+//     height: 60%;
+//   }
+//   .about-me-body{
+//     font-size: xx-small !important;
+//   }
+// }
 
 
 // NAVBAR
@@ -131,7 +150,7 @@ mat-toolbar {
 .navbar {
   display: flex;
   justify-content: space-around;
-  min-height: 100px !important;
+  height: 3rem;
 }
 
 .links {
@@ -156,7 +175,7 @@ mat-toolbar {
 }
 
 .icon {
-  padding-top: .5em;
+  padding-top: 1em;
   padding-inline: 1.5em;
 }
 
@@ -167,7 +186,7 @@ mat-toolbar {
 
 .resume {
   color: rgba(176, 176, 176, 0.678) !important;
-  margin-top: .5rem;
+  margin: 1rem 1rem 0 0;
   border-radius: 8px;
   padding: .5em .75em;
   transition: ease .3s;
@@ -176,14 +195,14 @@ mat-toolbar {
     transform: scale(1.0025);
     color: white !important;
   }
+
 }
 
-
-@media (max-width: 450px){
-  .icon {
-    padding-inline: .5em;
-  }
-  .brand {
-    padding-inline: 0 !important;
-  }
-}
+// @media (max-width: 450px){
+//   .icon {
+//     padding-inline: .5em;
+//   }
+//   .brand {
+//     padding-inline: 0 !important;
+//   }
+// }
