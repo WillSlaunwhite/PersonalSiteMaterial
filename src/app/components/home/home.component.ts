@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   }
 
   openPdf(){
-    window.open("assets/sd_resume.pdf");
+    window.open("assets/resume.pdf");
   }
 
 }
