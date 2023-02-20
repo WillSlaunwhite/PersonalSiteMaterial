@@ -1,139 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nunito:wght@200;300;400&family=Ubuntu:wght@300&display=swap');
-p {
+* {
+  font-family: 'Nunito', sans-serif;
+  color: white;
   text-align: center;
-} a {
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 } img {
-  min-width: 25rem;
-  max-width: 35rem;
-  border-radius: 15px;
+  border-radius: .5rem;
   transition: ease .5s;
+  opacity: .7;
   &:hover {
     transform: scale(1.03);
     transition: ease .5s;
+    opacity: 1;
   }
 }
 
 .container {
-  background-image: url("https://bl3301files.storage.live.com/y4m09o86Jonodo56CSbwHcRpggJ7QfEY6YIS4jHgJxnWo214sjRmPqH-khbmo8EmFiKq6vdFn-lJTF2eY00ddjHh6oo_O8Se_3Ag7z3hC5kGO3VZAdlcZOIIrjhiPWRRPmbLkapczl386b94K8E6-jtJcfLDKtQWjQH0xkPtI5JeU9GycETSzxuQVTYr0J3OCaL?width=3648&height=2736&cropmode=none");
+  background-image: url("https://i.imgur.com/fNoykKJ.jpg");
   background-size: 100vw 100vh;
-}
-
-.first-text {
-  padding-top: 3rem;
 }
 
 .project-link {
   min-width: 25rem;
   max-width: 35rem;
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
 }
 
 .card-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 5rem;
-  margin-inline: 3.5rem;
-}
-
-.card {
-  display: flex;
-  justify-content: center;
-  transition: ease-in-out .5s;
-  height: 100%;
+  margin: 5rem 3rem;
 }
 
 .card-text {
   width: 100%;
-  font-family: 'Nunito', sans-serif;
   font-weight: 200;
-  letter-spacing: .75px;
+  letter-spacing: .075rem;
 }
 
 .about-me-header {
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 2px;
+  letter-spacing: .125rem;
   font-size: 2rem;
-  text-align: center;
   font-weight: 400;
   margin-top: 1rem;
   padding-bottom: .5rem;
-  color: white;
 }
 
 .about-me-body {
-  font-family: 'Nunito', sans-serif;
-  letter-spacing: 1.5px;
+  letter-spacing: .075rem;
   font-size: 1.25rem;
-  color: white;
   font-weight: 300;
-  text-align: center;
-  padding-inline: 20%;
+  padding-inline: 25rem;
 }
-
-
-@media(max-width: 1250px) {
-  .about-me-header{
-    font-size: x-large;
-  }
-  .about-me-body {
-    font-size: 1rem;
-    padding-inline: 10%;
-  }
-  img {
-    width: 20rem;
-  }
-  .card-container {
-    align-items:center;
-    flex-direction: column;
-  }
-}
-@media(max-height: 900px) {
-  .container {
-    background-size: 100vw 120vh;
-    height: 120vh;
-  }
-  .about-me-header{
-    font-size: x-large;
-    padding: 0;
-  }
-  .about-me-body {
-    letter-spacing: .1rem;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    padding-inline: 10%;
-  }
-  img {
-    width: 20rem;
-  }
-  .card-container {
-    margin: 2rem;
-    align-items:center;
-    flex-direction: column;
-  }
-}
-
-// @media (max-height: 800px) {
-//   .card-container{
-//     justify-content: flex-start ;
-//   }
-//   img {
-//     height: 60%;
-//   }
-//   .about-me-body{
-//     font-size: xx-small !important;
-//   }
-// }
-
 
 // NAVBAR
-* {
-  font-family: Poppin, sans-serif;
-}
-input {
-  background: transparent !important;
+mat-toolbar {
+  background-color: transparent;
 }
 fa-icon {
   color: rgba(176, 176, 176, 0.678);
@@ -143,14 +66,11 @@ fa-icon {
     color:white;
   }
 }
-mat-toolbar {
-  background-color: transparent !important;
-}
 
 .navbar {
   display: flex;
   justify-content: space-around;
-  height: 3rem;
+  height: 3.5rem;
 }
 
 .links {
@@ -198,11 +118,48 @@ mat-toolbar {
 
 }
 
-// @media (max-width: 450px){
-//   .icon {
-//     padding-inline: .5em;
-//   }
-//   .brand {
-//     padding-inline: 0 !important;
-//   }
-// }
+
+@media(max-width: 1300px) {
+  .about-me-header{
+    font-size: x-large;
+  }
+  .about-me-body {
+    font-size: 1rem;
+    padding-inline: 10%;
+  }
+  img {
+    width: 25rem;
+  }
+  .card-container {
+    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .project-link {
+    align-items: center;
+  }
+}
+@media(max-height: 900px) {
+  .container {
+    background-size: 100vw 120vh;
+    height: 120vh;
+  }
+  .about-me-header{
+    font-size: x-large;
+    padding: 0;
+  }
+  .about-me-body {
+    letter-spacing: .1rem;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    padding-inline: 10%;
+  }
+  img {
+    width: 20rem;
+  }
+  .card-container {
+    margin: 2rem;
+    align-items:center;
+    flex-direction: column;
+  }
+}
