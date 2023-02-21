@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nunito:wght@200;300;400&family=Ubuntu:wght@300&display=swap');
-* {
-  font-family: 'Nunito', sans-serif;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-} img {
+* { font-family: 'Nunito', sans-serif; color: white; text-align: center; text-decoration: none; }
+ img {
   // images still go on different lines
   // when text is diff lengths
   height: 15rem;
@@ -12,6 +8,7 @@
   border-radius: .5rem;
   transition: ease .5s;
   opacity: .8;
+  margin-bottom: .25rem;
   &:hover {
     transform: scale(1.02);
     transition: ease .5s;
@@ -26,30 +23,22 @@
   height: 100vh;
   background-image: url("https://i.imgur.com/fNoykKJ.jpg");
   background-size: 100vw 100vh;
-  align-items: center;
 }
 
-// .project-link {
-//   min-width: 25rem;
-//   max-width: 35rem;
-//   display: flex;
-//   text-decoration: none;
-//   flex-direction: column;
-//   margin: 2rem;
-// }
-
-.card {
-  margin-top: 5rem;
+.project-link {
+  display: flex;
+  flex-direction: column;
 }
+
 
 .card-container {
   display: flex;
-  justify-content: space-around;
-  margin: 5rem 1.5rem;
+  padding-top: 5rem;
 }
 
 .card-text {
-  width: 80%;
+  width: 75%;
+  height: 2rem !important;
   margin: auto;
   font-weight: 200;
   letter-spacing: .075rem;
@@ -150,6 +139,25 @@ fa-icon {
   .project-link {
     align-items: center;
     margin-top: .75rem;
+  }
+}
+
+@media(max-width: 1050px) {
+  .card-container {
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    padding: 0;
+  }
+  .otd a img:last-of-type {
+    margin-top: 3rem;
+  }
+  .container {
+    height: 150vh;
+    background-size: 100vw 150vh;
+  }
+  .mask {
+    height: 150vh !important;
   }
 }
 
