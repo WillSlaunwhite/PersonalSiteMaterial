@@ -1,33 +1,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nunito:wght@200;300;400&family=Ubuntu:wght@300&display=swap');
-* { font-family: 'Nunito', sans-serif; color: white; text-align: center; text-decoration: none; }
- img {
-  // images still go on different lines
-  // when text is diff lengths
-  height: 15rem;
-  width: 30rem;
-  border-radius: .5rem;
-  transition: ease .5s;
-  opacity: .8;
-  margin-bottom: .25rem;
-  &:hover {
-    transform: scale(1.02);
-    transition: ease .5s;
-    opacity: 1;
-  }
-}
-.card {
-  width: 50% !important;
+
+* {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }
 
-.container {
-  height: 100vh;
-  background-image: url("https://i.imgur.com/fNoykKJ.jpg");
-  background-size: 100vw 100vh;
+img {
+  // images still go on different lines
+  // when text is diff lengths
+  max-width: 50%;
+  min-width: 50%;
+  height: 25vh;
+  // height: auto ;
+  // width: 100%;
+  border-radius: .5rem;
+  opacity: .8;
+  margin-bottom: .25rem;
+  transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter, transform, scale, opacity, box-shadow;
+  transition-duration: 1.5s;
+  filter: blur(.05rem);
+
+  &:hover {
+    transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter, transform, box-shadow, scale, opacity;
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+    transform: scale(1.02);
+    opacity: 1;
+    filter: brightness(1.2) blur(0rem);
+  }
 }
+
+.otd a img:last-of-type {
+  opacity: .6;
+}
+
+
+.card {
+  width: 50%;
+  height: auto;
+}
+
+// need to apply better filter to bg image
+// backdrop filter on mask works!!
 
 .project-link {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 5rem 0 0;
 }
 
 
@@ -62,12 +84,13 @@
 mat-toolbar {
   background-color: transparent;
 }
+
 fa-icon {
   color: rgba(176, 176, 176, 0.678);
 
   &:hover {
     transition: ease .3s;
-    color:white;
+    color: white;
   }
 }
 
@@ -80,7 +103,7 @@ fa-icon {
 .links {
   display: flex;
   width: 100%;
-  justify-content: flex-end ;
+  justify-content: flex-end;
 }
 
 .nav-link {
@@ -114,6 +137,7 @@ fa-icon {
   border-radius: 8px;
   padding: .5em .75em;
   transition: ease .3s;
+
   &:hover {
     transition: ease .15s;
     transform: scale(1.0025);
@@ -124,18 +148,21 @@ fa-icon {
 
 
 @media(max-height: 1000px) {
-  .about-me-header{
+  .about-me-header {
     font-size: x-large;
   }
+
   .about-me-body {
     font-size: 1.25rem;
     padding-inline: 20%;
   }
+
   .card-container {
-    align-items:center;
+    align-items: center;
     justify-content: center;
     margin-top: 3rem;
   }
+
   .project-link {
     align-items: center;
     margin-top: .75rem;
@@ -145,19 +172,18 @@ fa-icon {
 @media(max-width: 1050px) {
   .card-container {
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     padding: 0;
   }
+
   .otd a img:last-of-type {
     margin-top: 3rem;
   }
+
   .container {
     height: 150vh;
     background-size: 100vw 150vh;
-  }
-  .mask {
-    height: 150vh !important;
   }
 }
 

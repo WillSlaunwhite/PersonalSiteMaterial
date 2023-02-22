@@ -1,3 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100; margin: 0; overflow-x: hidden;}
+html, body { height: 100%; margin: 0; overflow-x: hidden;}
+body {
+  background: url("https://i.imgur.com/fNoykKJ.jpg");
+  background-size: cover;
+  position: fixed;
+  background-attachment: fixed;
+  backdrop-filter: blur(0.12rem) brightness(0.4) contrast(1) grayscale(0.15) saturate(1.4) !important;
+}
