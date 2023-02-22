@@ -38,7 +38,7 @@ img {
 
 
 .card {
-  width: 50%;
+  width: 75%;
   height: auto;
 }
 
@@ -55,7 +55,9 @@ img {
 
 .card-container {
   display: flex;
-  padding-top: 5rem;
+  padding-top: 2.5rem;
+  padding-inline-end: 10%;
+  padding-inline-start: 10%;
 }
 
 .card-text {
@@ -78,6 +80,7 @@ img {
   letter-spacing: .075rem;
   font-size: 1.5rem;
   font-weight: 300;
+  padding-inline: 15%;
 }
 
 // NAVBAR
@@ -147,14 +150,18 @@ fa-icon {
 }
 
 
-@media(max-height: 1000px) {
+@media(max-height: 850px) {
+  img{
+    max-width: 60%;
+    min-width: 60%;
+    height: 30vh;
+  }
   .about-me-header {
     font-size: x-large;
   }
 
   .about-me-body {
     font-size: 1.25rem;
-    padding-inline: 20%;
   }
 
   .card-container {
