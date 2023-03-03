@@ -2,12 +2,9 @@
 
 html, body { height: 100%; margin: 0; overflow-x: hidden;}
 body {
-  min-height: 100%;
-  min-width: 100%;
   background: url("https://i.imgur.com/fNoykKJ.jpg");
   background-size: cover;
-  position: fixed;
-  background-attachment: fixed;
-  backdrop-filter: blur(0.12rem) brightness(0.4) contrast(1) grayscale(0.15) saturate(1.4) !important;
-  // transform: translateY();
+  background-position: center;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(0.12rem) brightness(0.25) contrast(1) grayscale(0.15) saturate(1.4) !important;
 }

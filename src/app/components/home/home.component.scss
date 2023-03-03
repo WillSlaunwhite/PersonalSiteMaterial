@@ -20,7 +20,7 @@ img {
   margin-bottom: .25rem;
   transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter, transform, scale, opacity, box-shadow;
   transition-duration: 1s;
-  filter: blur(.05rem);
+  filter: blur(.03rem);
 
   &:hover {
     transition-property: -moz-filter, -ms-filter, -o-filter, -webkit-filter, filter, transform, box-shadow, scale, opacity;
@@ -33,7 +33,7 @@ img {
 }
 
 .otd a img:last-of-type {
-  opacity: .6;
+  opacity: .8;
 }
 
 
@@ -60,6 +60,10 @@ img {
   margin: auto;
   font-weight: 200;
   letter-spacing: .075rem;
+}
+
+.about-me {
+  opacity: .8;
 }
 
 .about-me-header {
