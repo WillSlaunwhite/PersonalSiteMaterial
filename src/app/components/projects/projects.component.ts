@@ -15,10 +15,10 @@ export class Project {
 
 @Component({
   selector: 'app-project',
-  templateUrl: './project.component.html',
-  styleUrls: ['./project.component.scss'],
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss'],
 })
-export class ProjectComponent implements OnInit {
+export class ProjectsComponent implements OnInit {
   showText: boolean = false;
 
   constructor(private route: ActivatedRoute) {}

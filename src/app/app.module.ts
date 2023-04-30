@@ -19,9 +19,12 @@ import { MatCardModule } from '@angular/material/card';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { DataStructuresComponent } from './components/data-structures/data-structures.component';
+import { MachineLearningComponent } from './components/machine-learning/machine-learning.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NavbarComponent, ProjectComponent],
+  declarations: [AppComponent, HomeComponent, NavbarComponent, ProjectComponent, DataStructuresComponent, MachineLearningComponent, ProjectsComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
