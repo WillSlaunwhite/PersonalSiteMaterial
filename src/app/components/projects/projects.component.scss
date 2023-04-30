@@ -5,58 +5,79 @@
 
 .container {
   height: 100vh;
+}
 
-  .project-container,
-  .project-image-container {
+.project-container,
+.project-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.project-image-container {
+  margin-left: 20%;
+  margin-right: 17.5%;
+}
+
+.project-link {
+  margin: 2em 5% 0.5em;
+  width: 25%;
+  display: flex;
+
+  &:nth-of-type(3) {
+    align-self: flex-end;
+    position: fixed;
+  }
+
+  &:nth-of-type(4) {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
   }
+}
 
-  .project-image-container {
-    margin-left: 20%;
-    margin-right: 17.5%;
+.project-text {
+  align-self: center;
+  background: transparent;
+  font-weight: 300;
+  word-spacing: 0.2em;
+  line-height: 1.5;
+}
 
-    .project-link {
-      margin: 2em 5% 0.5em;
-      width: 25%;
-      display: flex;
+.image-container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
 
-      &:nth-of-type(3) {
-        align-self: flex-end;
-        position: fixed;
-      }
+img {
+  border-radius: 15px;
+  width: 100%;
+  min-width: 450px;
+  max-width: 450px;
+  height: 22vh;
+  transition: ease-in-out 0.5s;
 
-      &:nth-of-type(4) {
-        display: flex;
-        flex-wrap: wrap;
-      }
-
-      .image-container {
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        color: white;
-      }
-    }
-
+  &:hover {
+    transform: scale(1.25);
+    transition: ease-in-out 0.5s;
+    -o-transition: ease-in-out 0.5s;
+    /* opera */
+    -ms-transition: ease-in-out 0.5s;
+    /* IE 10 */
+    -moz-transition: ease-in-out 0.5s;
+    /* Firefox */
+    -webkit-transition: ease-in-out 0.5s;
+    /* safari and chrome */
   }
+}
 
-  .project-text {
-    align-self: center;
-    background: transparent;
-    font-weight: 300;
-    word-spacing: 0.2em;
-    line-height: 1.5;
-    color: white;
-    padding: 1em;
-    width: 55%;
-    margin-left: 0;
-    text-align: center;
-  }
-
-
-
+p {
+  color: white;
+  padding: 1em;
+  width: 55%;
+  margin-left: 0;
+  text-align: center;
 }
 
 ::ng-deep .mat-tooltip {
@@ -73,5 +94,11 @@
   &:nth-of-type(2) {
     bottom: 5em !important;
     background-color: #35335c;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    flex-direction: column;
   }
 }

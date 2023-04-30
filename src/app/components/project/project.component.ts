@@ -14,7 +14,7 @@ export class Project {
 }
 
 @Component({
-  selector: 'app-project',
+  selector: 'app-projects',
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss'],
 })

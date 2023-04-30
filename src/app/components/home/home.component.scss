@@ -16,9 +16,10 @@ $icon-hover-color: white;
 
 // Update font weights, sizes, and line heights
 h1 {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2.5em;
   line-height: 1.2;
+  letter-spacing: .15em;
 }
 
 h2 {
@@ -29,7 +30,7 @@ h2 {
 
 p {
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.4em;
   line-height: 1.5;
 }
 
@@ -48,7 +49,7 @@ img {
   margin-bottom: .25rem;
   transition: transform .35s, opacity .35s, filter .35s, box-shadow .35s;
 
-  filter: blur(.03rem);
+  filter: blur(.2rem);
 
   &:hover {
     transform: scale(1.02);
@@ -63,13 +64,82 @@ img {
 }
 
 
+.navbar {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+
+  .left-links,
+  .right-links {
+    display: flex;
+  }
+
+  // .right-links {
+  //   margin-left: 5em;
+  // }
+
+  .left-links {
+    margin-top: .5rem;
+  }
+
+  .nav-link {
+    border-radius: 8px;
+    padding: 1em 1.5em;
+
+
+  }
+
+  fa-icon {
+    color: $primary-color;
+
+    &:hover {
+      transition: ease .3s;
+      color: $icon-hover-color;
+    }
+  }
+
+  .icon {
+    padding-inline: .5em;
+  }
+
+  .mat-button {
+    font-size: 17px;
+    font-weight: 300;
+    align-items: center;
+    color: gray;
+    text-decoration: none;
+    display: inline-block;
+    transition: ease .15s;
+    margin-top: .25rem;
+
+    &:hover {
+      transition: ease .3s;
+      color: $icon-hover-color;
+    }
+  }
+
+  .resume-span {
+    margin-inline: -.5em;
+    margin-top: -.25em;
+
+    .resume {
+      color: $primary-color !important;
+      border-radius: 8px;
+      padding: .4em .75em;
+      transition: ease .3s;
+
+      &:hover {
+        transform: scale(1.0025);
+        color: white !important;
+      }
+    }
+  }
+}
 
 .container {
   .mask-custom {
     .navbar {
       display: flex;
-      justify-content: space-around;
-      height: 3.5rem;
+      justify-content: space-between;
 
       .links {
         display: flex;
@@ -112,68 +182,6 @@ img {
     }
   }
 }
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  height: 3.5rem;
-
-  .left-links,
-  .right-links {
-    display: flex;
-  }
-
-  .left-links {
-    margin-top: .5rem;
-  }
-
-  .nav-link {
-    border-radius: 8px;
-    padding: 1em 1.5em;
-
-  }
-
-  fa-icon {
-    color: $primary-color;
-
-    &:hover {
-      transition: ease .3s;
-      color: $icon-hover-color;
-    }
-  }
-
-  .icon {
-    padding-inline: 1.5em;
-  }
-
-  .mat-button {
-    font-size: 17px;
-    font-weight: 300;
-    align-items: center;
-    color: gray;
-    text-decoration: none;
-    display: inline-block;
-    transition: ease .15s;
-    margin-top: .25rem;
-  }
-
-  .resume-span {
-    margin: -.25em .75em 0 .5em;
-
-    .resume {
-      color: $primary-color !important;
-      border-radius: 8px;
-      padding: .4em .75em;
-      transition: ease .3s;
-
-      &:hover {
-        transform: scale(1.0025);
-        color: white !important;
-      }
-    }
-  }
-}
-
 
 // MEDIA QUERIES
 
