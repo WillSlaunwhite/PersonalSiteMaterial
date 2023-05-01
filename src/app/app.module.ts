@@ -23,6 +23,7 @@ import { MachineLearningComponent } from './components/machine-learning/machine-
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+
 @NgModule({
   declarations: [AppComponent, HomeComponent, NavbarComponent, ProjectComponent, DataStructuresComponent, MachineLearningComponent, ProjectsComponent],
   imports: [
@@ -38,8 +39,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatListModule,
     HttpClientModule,
     MatCardModule,
-    FontAwesomeModule,
     MatTooltipModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent],
