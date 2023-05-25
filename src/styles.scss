@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Nunito:wght@200;300;400;600;800&family=Ubuntu:wght@300&display=swap');
 
-html, body { height: 100%; margin: 0; overflow-x: hidden;}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 body {
   background: url("https://i.imgur.com/fNoykKJ.jpg");
   background-size: cover;
